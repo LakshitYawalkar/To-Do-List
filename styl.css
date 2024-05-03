@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Almarai";
+}
+@font-face {
+  font-family: "Almarai";
+  src: url(./Almarai-Bold.ttf);
+}
+body {
+  background: rgb(252, 176, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 176, 243, 1) 0%,
+    rgba(61, 5, 221, 1) 100%
+  );
+}
+h1 {
+  margin-top: 10px;
+}
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  font-size: 16px;
+}
+
+#inputbtn {
+  height: 50px;
+  width: 650px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+#addBtn {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#addBtn:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+}
+#addBtn:active {
+  background-color: #ffb3b3;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+#taskList {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 450px;
+  font-size: 16px;
+  position: 5px;
+  gap: 1000px;
+}
+.complete {
+  text-decoration: line-through;
+}
+
+/* Style for each task item */
+#taskList li {
+  margin-top: 50px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 500px;
+}
+
+.hide {
+  display: none;
+}
+
+.done-btn {
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  margin-left: 500px;
+  margin-right: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.done-btn:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+}
+.done-btn:active {
+  background-color: #ffb3b3;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.deleteBtn {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  margin-left: 580px;
+  margin-right: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+}
+.deleteBtn:active {
+  background-color: #ffb3b3;
+  box-shadow: none;
+  transform: translateY(4px);
+}
